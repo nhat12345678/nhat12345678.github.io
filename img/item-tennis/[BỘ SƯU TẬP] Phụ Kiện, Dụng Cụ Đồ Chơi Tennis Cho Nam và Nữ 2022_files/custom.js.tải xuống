@@ -1,0 +1,83 @@
+$(document).ready(function() { 
+    
+    if($(".back_to_top").length){
+        $(".back_to_top").click(function() {
+           $("html, body").animate({ scrollTop: 0 }, "slow");
+           return false;
+        });
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+        
+            if(height > 300) {
+                $(".back_to_top").fadeIn();
+            } else {
+                $(".back_to_top").fadeOut();
+            }
+        });
+    };
+
+    if ($(window).width() > 767) {
+        heightkk = $(".header-cn").height();
+        $(".header-cn-height").height(heightkk);
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if(height > 30) {
+                $(".header-cn").addClass("fixed");
+                $(".header-cn-height").addClass("active");
+            } else {
+                $(".header-cn").removeClass("fixed");
+                $(".header-cn-height").removeClass("active");
+            }
+        });
+    };
+    if ($(window).width() < 768) {
+        // heightkk = $(".header").height();
+        $(".header-cn-height").height(97);
+        $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if(height > 52) {
+                $(".header").addClass("fixed");
+                $(".header-cn-height").addClass("active");
+            } else {
+                $(".header").removeClass("fixed");
+                $(".header-cn-height").removeClass("active");
+            }
+        });
+    };
+
+
+    $(".click-main-nav").click(function(){
+        $(".nav-header-inner").addClass("active");
+        $(".backdrop").addClass("active");
+        $("body").addClass("active");
+    });
+    $(".close-nav-header,.backdrop").click(function(){
+        $(".nav-header-inner").removeClass("active");
+        $(".backdrop").removeClass("active");
+        $("body").removeClass("active");
+    });
+    if ($(window).width() < 1200) {
+        $(".menu-item-has-children").append("<span class='open-submenu'></span>"); 
+    };
+    $(".open-submenu").click(function(){
+        $(this).toggleClass("active");
+        $(this).parent(".menu-item-has-children").children("ul").slideToggle();
+    });
+
+    $(".show_hide").click(function(e){
+        e.preventDefault();
+        if($(this).hasClass("active")){
+        $(this).find(".span_show_hide").text("Đọc Thêm ")
+        }else{
+        $(this).find(".span_show_hide").text("Rút Gọn ")
+        };
+        $(this).toggleClass("active");
+        $(this).parent(".cl-top").toggleClass("active");
+    });
+
+    $('[data-toggle="tooltip"]').tooltip({
+       placement: 'bottom'
+    }); 
+});
+
+    

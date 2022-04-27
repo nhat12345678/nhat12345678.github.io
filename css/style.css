@@ -1,0 +1,283 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+/*=====Navbar===========*/
+header {
+  position: fixed;
+  z-index: 16;
+  width: 100%;
+}
+
+.login-signup a {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.login-signup a:hover {
+  color: red !important;
+  text-decoration: none;
+}
+
+.navbar-brand {
+  font-size: 200% !important;
+
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.navbar-toggler {
+  outline: none !important;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.cart-text a {
+  color: yellow !important;
+}
+
+.cart-text a:hover {
+  color: red !important;
+}
+
+.navbar-form {
+  width: 30%;
+}
+
+/*=========Slider Section ============*/
+.carousel-item {
+  height: 600px;
+  margin-top: 106px;
+}
+
+.carousel-image-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-trangchu/banner-bongro.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-trangchu/banner-xedap-sport=.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url('../img/banner-trangchu/bannerbanbongban.jpg');
+  background-size: cover;
+}
+
+.h-color {
+  color: #fff;
+
+}
+
+.btn-color {
+  background: #000;
+  color: #fff;
+}
+
+.btn-color:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.slide-btn {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+
+.service-icon {
+  display: inline-block;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: rgb(0, 89, 255);
+  padding: 8px 16px;
+}
+
+
+.tieude{
+  color: #fff;
+  font-size: 40px;
+  justify-content: center;
+  margin-top: 5px;
+}
+img.img-fluid {
+  height: 440px;
+}
+.col-small .gia_khuyen_mai span{
+
+  color: red;
+}
+
+.col-small .danhgia_sodaban i{
+
+  color: yellow;
+}
+
+.col-small {
+  border: 1px solid lightgray;
+  transition: all 0.5s;
+  height: 450px;
+  padding: 10px;
+}
+
+.col-small:hover {
+  cursor: pointer;
+}
+
+.col-small:hover {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
+
+.col-small:hover img {
+  padding: 5px;
+}
+
+.col-small:hover .ten {
+  color: #5151f3;
+}
+
+.col-small:hover button {
+  color: white;
+  background: #f76b1c;
+}
+
+.col-big:hover {
+  cursor: pointer;
+}
+
+.col-big:hover {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
+.product-title {
+  color: #fff;
+}
+
+
+.card-text {
+  align-items: center;
+}
+
+.products-second {
+  background-color: antiquewhite;
+  padding-bottom: 30px;
+}
+
+.products-second h2 {
+  font-size: 40px;
+  color: #fff;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.products-second img {
+  width: 170px;
+  height: 120;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  justify-items: center;
+}
+
+.products-second h6 {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  font-size: 15px;
+
+}
+
+.products-second p span {
+  color: red;
+}
+
+.products-second p i {
+  color: yellow;
+}
+
+.click-buy {
+  width: 30% !important;
+  margin-left: -100px !important;
+}
+.card {
+  border: 1px solid lightgray;
+  transition: all 0.5s;
+  height: 550px;
+  padding: 10px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover {
+  border: 1px solid #337ab7;
+  border-radius: 10px;
+}
+
+.card:hover img {
+  padding: 5px;
+}
+
+.card:hover .card-title {
+  color: #5151f3;
+}
+
+.card:hover button {
+  color: white;
+  background: #f76b1c;
+}
+
+.btn-color {
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+/*==Footer===*/
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+ul.menu-foot {
+  list-style-type: none;
+}
+
+ul.menu-foot a {
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.527);
+}
+
+.widget-menu {
+  list-style-type: none;
+}
+
+ul.widget-menu a {
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.527);
+}
+
+.fab {
+  padding-left: 10px;
+}
+
+.information{
+  padding-top: 120px;
+}
